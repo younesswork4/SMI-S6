@@ -1,0 +1,8 @@
+INSERT INTO employee (enum, ename, salary, address, dept) VALUES ('Enum7', 'Amine', 7500, 'Fes', 'Dep2');
+INSERT INTO employee (enum, ename, salary, address, dept) VALUES ('Enum6', 'Aziz', 8500, 'Casa', 'Dep1');
+INSERT INTO employee (enum, ename, salary, address, dept) VALUES ('Enum5', 'Amina',8000, 'Rabat', 'Dep3');
+INSERT INTO employee (enum, ename, salary, address, dept) VALUES ('Enum4', 'Said', 5000, 'Agadir', 'Dep3');
+INSERT INTO employee (enum, ename, salary, address, dept) VALUES ('Enum3', 'Fatima', 7000, 'Tanger', 'Dep2');
+INSERT INTO employee (enum, ename, salary, address, dept) VALUES ('Enum2', 'Ahmed', 6000, 'Casa', 'Dep1');
+INSERT INTO employee (enum, ename, salary, address, dept) VALUES ('Enum1', 'Ali', 8000, 'Rabat', 'Dep1');
+INSERT INTO employee (enum, ename, salary, address, dept) VALUES ('Enum8', 'Ahmed', 4000, 'Casa', 'Dep4') ;

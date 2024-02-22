@@ -1,0 +1,44 @@
+CREATE TABLE PERSONNE 
+(numpers number PRIMARY KEY, 
+nom varchar2 (30) NOT NULL, 
+prenom varchar2 (30), 
+pere REFERENCES PERSONNE (numpers),
+mere REFERENCES PERSONNE (numpers)) ;
+--------
+CREATE TABLE CLIENT 
+(numcli number PRIMARY KEY,
+nomclI varchar2 (30) , 
+prenomclI varchar2 (30) , 
+adresse varchar2 (60), 
+tel    varchar (10)) ;
+--------
+CREATE TABLE PERSONNEL 
+(numpers number PRIMARY KEY,  
+nompers varchar2 (30), 
+prenompers varchar2 (30), 
+manager number, 
+salaire number,
+constraint "ck_salaire" check (salaire>=1000)
+);
+---------
+INSERT INTO PERSONNE VALUES (1, 'Abanat', 'Mohammed', NULL, NULL);
+INSERT INTO PERSONNE VALUES (16, 'Ettouri', 'Souad', NULL, NULL) ;
+INSERT INTO PERSONNE VALUES (2, 'Lastami', 'Brahim', 1, 16);
+INSERT INTO PERSONNE VALUES (3, 'Lgharrad', ' Youssef', 1, 16);
+INSERT INTO PERSONNE VALUES (4, 'Zouhairi', 'Ilham', NULL, NULL);
+INSERT INTO PERSONNE VALUES (13, 'Ghamdi', 'Nora', NULL, NULL);
+INSERT INTO PERSONNE VALUES (5, 'Slayki', 'Larbi', 3, 4);
+INSERT INTO PERSONNE VALUES (12, 'Sarrati', 'Khadija', NULL, NULL);
+INSERT INTO PERSONNE VALUES (6, 'Rahimi', 'Said', NULL, NULL);
+INSERT INTO PERSONNE VALUES (7, 'Bontoutou', 'Slimane', 6, 4);
+INSERT INTO PERSONNE VALUES (8, 'Dahou', 'Khalid', 2, 13);
+INSERT INTO PERSONNE VALUES (9, 'Loumatti', 'Imad', 8, 12);
+INSERT INTO PERSONNE VALUES (10, 'Bacha', 'Smail', 5, 12);
+INSERT INTO PERSONNE VALUES (17, 'Mattrane', 'Leila', NULL, NULL) ;
+INSERT INTO PERSONNE VALUES (11, 'Lemarahi', 'Jihane', 10, 17) ;
+INSERT INTO PERSONNE VALUES (15, 'Souradi', 'Ahmed', 3, 13);
+INSERT INTO PERSONNE VALUES (19, 'Janati', 'Siham', NULL, NULL);
+INSERT INTO PERSONNE VALUES (20, 'Boussahi', 'Najwa', 9, 19);
+INSERT INTO PERSONNE VALUES (21, 'Fabi', 'Zoubida', 10, 17);
+INSERT INTO PERSONNE VALUES (14, 'Stami', 'Sara', 15, 20);
+INSERT INTO PERSONNE VALUES (18, 'Faraji', 'Houda', 7, 13);

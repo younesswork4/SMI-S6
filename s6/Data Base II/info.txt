@@ -1,0 +1,30 @@
+++++++ programms
+1/ Cisco Packet Tracer
+2/ oracle
+3/ Eclips
+
+
+++++++ Class Room
+java : cdy66j
+BD: uguacy7
+Sys : 53vpm46
+Reseau : xowzj2c || uj3vmyl
+
+
++++++++ webSites
+BD : https://sites.google.com/view/khalidhousni/cours/smi-s6?authuser=0
+
+
+++++++ Drives
+Drive 1: https://drive.google.com/drive/folders/1e2T14QjZh-NFL0Q0Eupj9r7FJbQZBTh2?usp=sharing
+Drive 2: https://drive.google.com/drive/u/0/folders/10o7rKTUGXkEmAoWeydS3MER0Ta97hbMk
+Drive 3: https://drive.google.com/file/d/1zK0tDHwukoLo_D8p_HGaSFD4KOrCDmQv/view
+Drive 4: https://drive.google.com/drive/u/0/folders/0B2rZiy0vtITOeHUtakt0VVVqWHc
+Drive 5: https://drive.google.com/file/d/1bQvodeWmj7Qd6iNufm89qTlGYi2vGX31/view?usp=sharing
+Drive 6: https://drive.google.com/drive/folders/1e2T14QjZh-NFL0Q0Eupj9r7FJbQZBTh2
+
+
+
+https://dl.filehorse.com/win/developer-tools/oracle-database-express-64/OracleXE112_Win64.zip?st=yUtslmZKaDVfeXrZMf_j-w&e=1617832358&fn=OracleXE112_Win64.zip
+eclips
+ASE8ase@$

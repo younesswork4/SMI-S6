@@ -1,0 +1,49 @@
+package pack.ig0;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class Boutons0 extends JPanel implements ActionListener {  
+   private JButton trace;
+   private JButton efface;
+   private Ardoise  ardoise;
+   JPanel lesBoutonsCont; 
+   public Boutons0() {
+	    trace = new JButton("Tracer");
+	    efface = new JButton("Effacer");
+	    ardoise = new Ardoise();
+	    setLayout(new FlowLayout());
+
+	    setBackground(Color.RED);
+
+      lesBoutonsCont = new JPanel();
+      lesBoutonsCont.setBackground(Color.GREEN);
+      lesBoutonsCont.add(trace);
+      lesBoutonsCont.add(efface);
+      this.add(lesBoutonsCont);
+      this.add(ardoise);
+
+      trace.addActionListener(this);
+      efface.addActionListener(this);
+  }
+
+  public void actionPerformed(ActionEvent e) {
+      if (e.getSource() == trace) ardoise.setDessinExiste(true);
+      else if (e.getSource() == efface) ardoise.setDessinExiste(false);
+      ardoise.repaint();      
+   }
+
+   public static void main(String[] arg) {
+      JFrame monCadre = new JFrame("Dessins & Boutons...");
+      monCadre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      monCadre.setLocation(200,200);
+      monCadre.setContentPane(new Boutons0());
+      monCadre.pack();
+      monCadre.setVisible(true);
+  }
+}
